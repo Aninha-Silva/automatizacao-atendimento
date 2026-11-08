@@ -1,0 +1,9 @@
+{
+  "name": "copiloto-atendimento-rh",
+  "version": "1.0.0",
+  "description": "Ferramenta que resume conversas de atendimento para apoiar atendentes de RH.",
+  "scripts": {
+    "test": "node --test testes/validadorDeHistorico.test.js testes/normalizadorDeHistorico.test.js testes/analisadorDeConversa.test.js",
+    "exemplo": "node exemplos/conversaExemplo.js"
+  }
+}
