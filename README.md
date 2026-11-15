@@ -2,6 +2,8 @@
 
 Ferramenta que apoia atendentes de RH na compreensão rápida de solicitações, gerando um resumo estruturado a partir do histórico de uma conversa entre um colaborador e uma IA de atendimento.
 
+O Copiloto de Atendimento de RH ajuda os atendentes a entender mais rapidamente as solicitações dos colaboradores. Quando uma conversa iniciada com a inteligência artificial precisa ser encaminhada para uma pessoa, a ferramenta organiza as informações que já foram compartilhadas. Assim, o atendente consegue visualizar o que aconteceu e identificar quais informações ainda precisam ser esclarecidas. O objetivo é reduzir perguntas repetidas, evitar retrabalho e tornar o atendimento mais ágil.
+
 ---
 
 ## O problema
