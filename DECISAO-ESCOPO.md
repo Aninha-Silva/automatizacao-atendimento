@@ -44,3 +44,8 @@
 
 - **Alguma tool devolve texto escrito por outra pessoa? Qual?** Sim. A ferramenta `analisar_atendimento_rh` pode devolver informações extraídas de mensagens escritas por colaboradores e pela IA durante o atendimento.
 - **Se esse texto trouxesse uma ordem escondida, o que o agente conseguiria fazer com as outras ferramentas que ele tem na sessão?** O texto poderia tentar influenciar o agente a utilizar outras ferramentas disponíveis no Claude Code, como editar arquivos ou executar comandos. O MCP não concede essas permissões. O conteúdo retornado deve ser tratado como dado não confiável, e não como instrução para executar ações.
+
+## Risco 2 — tratamento da saída
+
+- A saída das ferramentas é devolvida ao Claude Code como conteúdo para análise. Neste projeto, ela não é enviada automaticamente para interpretadores de HTML, SQL ou comandos de terminal.
+- Mesmo assim, conteúdo derivado de mensagens de terceiros pode tentar influenciar o agente a utilizar outras ferramentas disponíveis na sessão. Por isso, deve ser tratado como dado não confiável, e não como instrução a executar.

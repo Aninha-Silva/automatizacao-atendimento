@@ -41,6 +41,18 @@ Resultado:
 - Status: válido.
 - Erros encontrados: nenhum.
 
+### Testes no MCP Inspector
+
+A conexão com o servidor foi estabelecida pelo MCP Inspector.
+
+- As três ferramentas foram listadas corretamente.
+- `validar_historico_atendimento` aceitou um histórico válido.
+- Histórico vazio foi rejeitado.
+- Autor inválido foi rejeitado.
+- Histórico com 20.001 caracteres foi rejeitado com a mensagem: `O histórico não pode ultrapassar 20.000 caracteres no total.`
+
+Resultado: validações de entrada confirmadas no Inspector.
+
 ## 5. Testes de entradas inválidas
 
 ### Autor não permitido
@@ -109,6 +121,6 @@ Resultados anteriores:
 
 - Schema público atualizado: `historico` agora descreve uma lista de mensagens com os campos `autor` e `mensagem`. A validação rigorosa continua no servidor.
 - Realizar revisão por pares das descrições das ferramentas.
-- Registrar o checklist de segurança para instalação de MCPs de terceiros.
-- Completar o registro de análise de prompt injection exigido pela atividade.
+- Preencher o checklist de segurança para MCPs de terceiros; o arquivo existe, mas os itens ainda não foram verificados.
+- O registro de análise de prompt injection foi preenchido em `LOG-INJECTION-TEMPLATE.md`.
 - Após a alteração do schema, os 7 testes do MCP e os 36 testes do projeto principal passaram novamente.

@@ -15,3 +15,15 @@ Antes de instalar um MCP de terceiros:
 - [ ] Remover o MCP se houver comportamento inesperado.
 
 **Regra:** não confiar apenas no nome ou na descrição da ferramenta. Conferir o que o código realmente faz.
+
+
+## Avaliação realizada — Context7 4.7.3
+
+- Origem identificada: pacote @upstash/context7-mcp, repositório Upstash.
+- Dependências diretas e scripts declarados consultados.
+- Requisito Node.js >=20.18.1 compatível com o ambiente utilizado.
+- Ferramentas identificadas: resolve-library-id e query-docs.
+- Limitações: código e dependências não foram auditados integralmente; permissões e destinos de rede não foram verificados por completo; backend, parsing e crawling são privados.
+- Cuidados: não fornecer segredos ou dados reais; manter menor privilégio; interromper o uso diante de comportamento inesperado.
+
+**Conclusão:** avaliação documental parcial. Não foi possível atestar a segurança integral do MCP.
